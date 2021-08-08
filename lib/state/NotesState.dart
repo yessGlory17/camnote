@@ -8,36 +8,36 @@ String testContent =
 
 class NotesState with ChangeNotifier {
   List<Note> notes = [
-    Note(testContent, Color(0xFFFFAB91), DateTime(2021, 9, 7, 17, 30)),
-    Note(testContent, Color(0xFFFFCC80), DateTime(2021, 10, 11, 17, 30)),
-    Note(testContent, Color(0xFFE6EE9B), DateTime(2021, 11, 18, 17, 30)),
-    Note(testContent, Color(0xFF80DEEA), DateTime(2021, 12, 2, 17, 30)),
-    Note(testContent, Color(0xFFCF93D9), DateTime(2021, 10, 10, 17, 30)),
-    Note(testContent, Color(0xFFFFAB91), DateTime(2021, 9, 7, 17, 30)),
-    Note(testContent, Color(0xFFFFCC80), DateTime(2021, 10, 11, 17, 30)),
-    Note(testContent, Color(0xFFE6EE9B), DateTime(2021, 11, 18, 17, 30)),
-    Note(testContent, Color(0xFF80DEEA), DateTime(2021, 12, 2, 17, 30)),
-    Note(testContent, Color(0xFFCF93D9), DateTime(2021, 10, 10, 17, 30)),
-    Note(testContent, Color(0xFFFFAB91), DateTime(2021, 9, 7, 17, 30)),
-    Note(testContent, Color(0xFFFFCC80), DateTime(2021, 10, 11, 17, 30)),
-    Note(testContent, Color(0xFFE6EE9B), DateTime(2021, 11, 18, 17, 30)),
-    Note(testContent, Color(0xFF80DEEA), DateTime(2021, 12, 2, 17, 30)),
-    Note(testContent, Color(0xFFCF93D9), DateTime(2021, 10, 10, 17, 30)),
-    Note(testContent, Color(0xFFFFAB91), DateTime(2021, 9, 7, 17, 30)),
-    Note(testContent, Color(0xFFFFCC80), DateTime(2021, 10, 11, 17, 30)),
-    Note(testContent, Color(0xFFE6EE9B), DateTime(2021, 11, 18, 17, 30)),
-    Note(testContent, Color(0xFF80DEEA), DateTime(2021, 12, 2, 17, 30)),
-    Note(testContent, Color(0xFFCF93D9), DateTime(2021, 10, 10, 17, 30)),
-    Note(testContent, Color(0xFFFFAB91), DateTime(2021, 9, 7, 17, 30)),
-    Note(testContent, Color(0xFFFFCC80), DateTime(2021, 10, 11, 17, 30)),
-    Note(testContent, Color(0xFFE6EE9B), DateTime(2021, 11, 18, 17, 30)),
-    Note(testContent, Color(0xFF80DEEA), DateTime(2021, 12, 2, 17, 30)),
-    Note(testContent, Color(0xFFCF93D9), DateTime(2021, 10, 10, 17, 30)),
-    Note(testContent, Color(0xFFFFAB91), DateTime(2021, 9, 7, 17, 30)),
-    Note(testContent, Color(0xFFFFCC80), DateTime(2021, 10, 11, 17, 30)),
-    Note(testContent, Color(0xFFE6EE9B), DateTime(2021, 11, 18, 17, 30)),
-    Note(testContent, Color(0xFF80DEEA), DateTime(2021, 12, 2, 17, 30)),
-    Note(testContent, Color(0xFFCF93D9), DateTime(2021, 10, 10, 17, 30)),
+    // Note(testContent, Color(0xFFFFAB91), DateTime(2021, 9, 7, 17, 30)),
+    // Note(testContent, Color(0xFFFFCC80), DateTime(2021, 10, 11, 17, 30)),
+    // Note(testContent, Color(0xFFE6EE9B), DateTime(2021, 11, 18, 17, 30)),
+    // Note(testContent, Color(0xFF80DEEA), DateTime(2021, 12, 2, 17, 30)),
+    // Note(testContent, Color(0xFFCF93D9), DateTime(2021, 10, 10, 17, 30)),
+    // Note(testContent, Color(0xFFFFAB91), DateTime(2021, 9, 7, 17, 30)),
+    // Note(testContent, Color(0xFFFFCC80), DateTime(2021, 10, 11, 17, 30)),
+    // Note(testContent, Color(0xFFE6EE9B), DateTime(2021, 11, 18, 17, 30)),
+    // Note(testContent, Color(0xFF80DEEA), DateTime(2021, 12, 2, 17, 30)),
+    // Note(testContent, Color(0xFFCF93D9), DateTime(2021, 10, 10, 17, 30)),
+    // Note(testContent, Color(0xFFFFAB91), DateTime(2021, 9, 7, 17, 30)),
+    // Note(testContent, Color(0xFFFFCC80), DateTime(2021, 10, 11, 17, 30)),
+    // Note(testContent, Color(0xFFE6EE9B), DateTime(2021, 11, 18, 17, 30)),
+    // Note(testContent, Color(0xFF80DEEA), DateTime(2021, 12, 2, 17, 30)),
+    // Note(testContent, Color(0xFFCF93D9), DateTime(2021, 10, 10, 17, 30)),
+    // Note(testContent, Color(0xFFFFAB91), DateTime(2021, 9, 7, 17, 30)),
+    // Note(testContent, Color(0xFFFFCC80), DateTime(2021, 10, 11, 17, 30)),
+    // Note(testContent, Color(0xFFE6EE9B), DateTime(2021, 11, 18, 17, 30)),
+    // Note(testContent, Color(0xFF80DEEA), DateTime(2021, 12, 2, 17, 30)),
+    // Note(testContent, Color(0xFFCF93D9), DateTime(2021, 10, 10, 17, 30)),
+    // Note(testContent, Color(0xFFFFAB91), DateTime(2021, 9, 7, 17, 30)),
+    // Note(testContent, Color(0xFFFFCC80), DateTime(2021, 10, 11, 17, 30)),
+    // Note(testContent, Color(0xFFE6EE9B), DateTime(2021, 11, 18, 17, 30)),
+    // Note(testContent, Color(0xFF80DEEA), DateTime(2021, 12, 2, 17, 30)),
+    // Note(testContent, Color(0xFFCF93D9), DateTime(2021, 10, 10, 17, 30)),
+    // Note(testContent, Color(0xFFFFAB91), DateTime(2021, 9, 7, 17, 30)),
+    // Note(testContent, Color(0xFFFFCC80), DateTime(2021, 10, 11, 17, 30)),
+    // Note(testContent, Color(0xFFE6EE9B), DateTime(2021, 11, 18, 17, 30)),
+    // Note(testContent, Color(0xFF80DEEA), DateTime(2021, 12, 2, 17, 30)),
+    // Note(testContent, Color(0xFFCF93D9), DateTime(2021, 10, 10, 17, 30)),
   ];
 
   List<Note> getNotes() {
@@ -46,6 +46,29 @@ class NotesState with ChangeNotifier {
 
   add(Note note) {
     notes.add(note);
+    notifyListeners();
+  }
+
+  remove(Note note) {
+    notes.remove(note);
+    notifyListeners();
+  }
+
+  update(Note note) {
+    print("update içinde");
+    String oldRemind = "";
+    if (note.remind == 'true') {
+      oldRemind = 'false';
+    } else {
+      oldRemind = 'true';
+    }
+    notes.remove(Note(note.id, note.note, note.color, oldRemind));
+    notes.add(note);
+    print("update tamamlandı!");
+    notifyListeners();
+  }
+
+  refresh() {
     notifyListeners();
   }
 }

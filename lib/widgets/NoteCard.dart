@@ -3,17 +3,26 @@ import 'package:date_format/date_format.dart';
 import 'package:flutter/material.dart';
 
 class NoteCard extends StatelessWidget {
+  int id;
   String note;
   Color color;
-  DateTime date;
-  NoteCard(this.date, {this.note = "", this.color = Colors.orangeAccent});
+  String date;
+  String remind;
+  NoteCard(this.id, this.date, this.remind,
+      {this.note = "", this.color = Colors.orangeAccent});
 
   @override
   Widget build(BuildContext context) {
-    var formattedDay = formatDate(date, [dd, ' ', M, ' ', yyyy]);
+    //var formattedDay = formatDate(date, [dd, ' ', M, ' ', yyyy]);
     return GestureDetector(
       onTap: () {
-        Navigator.of(context).pushNamed("/detail", arguments: this.note);
+        Navigator.of(context).pushNamed("/detail", arguments: {
+          'note': this.note,
+          'id': this.id,
+          'color': this.color,
+          'date': this.date,
+          'remind': this.remind
+        });
       },
       child: Container(
         width: 300,
@@ -36,7 +45,7 @@ class NoteCard extends StatelessWidget {
                 Container(
                   width: 200,
                   child: Text(
-                    formattedDay,
+                    date, //formattedDay,
                     textAlign: TextAlign.left,
                     style: TextStyle(
                         color: Color(0xFF8B8B8B), fontWeight: FontWeight.w600),
