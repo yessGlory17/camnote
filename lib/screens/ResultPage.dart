@@ -4,7 +4,6 @@ import 'dart:math';
 import 'package:camnote/models/Note.dart';
 import 'package:camnote/state/NotesState.dart';
 import 'package:camnote/state/ThemeChanger.dart';
-import 'package:camnote/utils/AdsHelper.dart';
 import 'package:camnote/utils/DatebaseHelper.dart';
 import 'package:camnote/widgets/DayButton/DayButton.dart';
 import 'package:date_format/date_format.dart';
@@ -50,39 +49,20 @@ class _ResultPageState extends State<ResultPage> {
   bool isRemind = false;
   bool isLoaded = false;
 
-  var _interstitialAd;
-
   DatabaseHelper dbh = DatabaseHelper();
-  AdsHelper adsHelper = AdsHelper.initialization();
+
   @override
   void initState() {
     // TODO: implement initState
 
     super.initState();
-
-    InterstitialAd.load(
-        adUnitId: AdsHelper.interstitialAdUnitId,
-        request: AdRequest(),
-        adLoadCallback: InterstitialAdLoadCallback(
-          onAdLoaded: (InterstitialAd ad) {
-            isLoaded = true;
-            ad.show();
-            print("Reklam Yüklendi!");
-          },
-          onAdFailedToLoad: (LoadAdError error) {
-            print('InterstitialAd failed to load: $error');
-          },
-        ));
   }
 
   @override
   Widget build(BuildContext context) {
     final theme = Provider.of<ThemeChanger>(context);
     pageData = ModalRoute.of(context)!.settings.arguments;
-    AdsHelper adsHelper = AdsHelper.initialization();
 
-    //adsHelper.loadBannerAd();
-    //_interstitialAd.show();
     Color archiveColor = Colors.black87;
     return Consumer<NotesState>(builder: (context, state, widget) {
       return Scaffold(

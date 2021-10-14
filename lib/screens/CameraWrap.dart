@@ -23,6 +23,7 @@ import 'package:camera_camera/src/presentation/widgets/camera_preview.dart';
 import 'package:camera_camera/src/shared/entities/camera_side.dart';
 import 'package:flutter/material.dart';
 import 'dart:convert';
+import 'package:simple_ocr_plugin/simple_ocr_plugin.dart';
 
 class CameraWrap extends StatefulWidget {
   const CameraWrap({Key? key}) : super(key: key);
@@ -46,7 +47,7 @@ class _CameraWrapState extends State<CameraWrap> {
           path = file.path;
           print("Dosya Yolu : ${file.path.toString()}");
 
-          performOcr(file.path).then((response) {
+          SimpleOcrPlugin.performOCR(file.path).then((response) {
             isShowBottoSheet = false;
             Navigator.of(context).pushNamed("/result",
                 arguments: clearResult(response.toString()));

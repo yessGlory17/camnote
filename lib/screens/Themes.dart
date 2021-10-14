@@ -1,6 +1,5 @@
 import 'package:camnote/models/ThemeSelectorItem.dart';
 import 'package:camnote/state/ThemeChanger.dart';
-import 'package:camnote/utils/AdsHelper.dart';
 import 'package:camnote/utils/ThemeList.dart';
 import 'package:flutter/material.dart';
 import 'package:grid_color_selector/grid_color_selector.dart';
@@ -16,8 +15,6 @@ class Themes extends StatefulWidget {
 }
 
 class _ThemesState extends State<Themes> {
-  AdsHelper adsHelper = AdsHelper();
-
   int selectedThemeItem = 0;
 
   @override

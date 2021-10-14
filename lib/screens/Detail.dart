@@ -1,7 +1,6 @@
 import 'package:camnote/models/Note.dart';
 import 'package:camnote/state/NotesState.dart';
 import 'package:camnote/state/ThemeChanger.dart';
-import 'package:camnote/utils/AdsHelper.dart';
 import 'package:camnote/utils/DatebaseHelper.dart';
 import 'package:camnote/utils/NotificationHelper.dart';
 import 'package:camnote/utils/ThemeList.dart';
@@ -22,7 +21,6 @@ class Detail extends StatefulWidget {
 
 class _DetailState extends State<Detail> {
   NotificationHelper notificationHelper = NotificationHelper();
-  AdsHelper adsHelper = AdsHelper();
 
   bool isLoaded = false;
 
@@ -32,45 +30,12 @@ class _DetailState extends State<Detail> {
 
     super.initState();
 
-    InterstitialAd.load(
-        adUnitId: AdsHelper.interstitialAdUnitId,
-        request: AdRequest(),
-        adLoadCallback: InterstitialAdLoadCallback(
-          onAdLoaded: (InterstitialAd ad) {
-            isLoaded = true;
-            ad.show();
-            print("Reklam Yüklendi!");
-          },
-          onAdFailedToLoad: (LoadAdError error) {
-            print('InterstitialAd failed to load: $error');
-          },
-        ));
-
-    adsHelper.loadBannerAd();
-
-    //_bannerAd!.load();
     notificationHelper.initiliazeNotification();
   }
 
   void dispose() {
-    //_bannerAd?.dispose();
     super.dispose();
   }
-
-  // Widget checkForBanner() {
-  //   if (isLoaded) {
-  //     return Container(
-  //       child: AdWidget(
-  //         ad: _bannerAd!,
-  //       ),
-  //       width: _bannerAd!.size.width.toDouble(),
-  //       height: _bannerAd!.size.height.toDouble(),
-  //       alignment: Alignment.center,
-  //     );
-  //   } else {
-  //     return CircularProgressIndicator();
-  //   }
-  // }
 
   @override
   Widget build(BuildContext context) {

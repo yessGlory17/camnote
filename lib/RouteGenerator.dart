@@ -17,6 +17,7 @@ import 'package:flutter/foundation.dart';
 import 'package:loading_animations/loading_animations.dart';
 import 'package:flutter_isolate/flutter_isolate.dart';
 import 'package:path/path.dart';
+import 'package:simple_ocr_plugin/simple_ocr_plugin.dart';
 
 class RouteGenerator {
   static String path = "";
@@ -54,13 +55,13 @@ class RouteGenerator {
   }
 }
 
-Widget control() {
-  while (extractedResult.extractedRes == "") {
-    return Center(child: LoadingFlipping.circle());
-  }
+// Widget control() {
+//   while (extractedResult.extractedRes == "") {
+//     return Center(child: LoadingFlipping.circle());
+//   }
 
-  return SelectableText(
-    RouteGenerator.content,
-    style: TextStyle(fontSize: 20, fontWeight: FontWeight.w400),
-  );
-}
+//   return SelectableText(
+//     RouteGenerator.content,
+//     style: TextStyle(fontSize: 20, fontWeight: FontWeight.w400),
+//   );
+// }

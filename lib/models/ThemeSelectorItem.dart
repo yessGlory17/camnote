@@ -1,5 +1,4 @@
 import 'package:camnote/state/ThemeChanger.dart';
-import 'package:camnote/utils/AdsHelper.dart';
 import 'package:camnote/utils/ThemeList.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -21,7 +20,6 @@ class ThemeSelectorItem extends StatefulWidget {
 
 class _ThemeSelectorItemState extends State<ThemeSelectorItem> {
   bool isSelected = false;
-  AdsHelper adsHelper = AdsHelper();
 
   @override
   void initState() {

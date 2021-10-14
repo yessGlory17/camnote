@@ -14,7 +14,6 @@ import 'package:shared_preferences/shared_preferences.dart';
 SharedPreferences? prefs;
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  MobileAds.instance.initialize();
   SharedPreferences.getInstance().then((val) {
     prefs = val;
     runApp(MyApp());
